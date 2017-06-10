@@ -8,7 +8,7 @@
                     <h4 class="cart-title">سبد خرید</h4>
                     <div class="table-responsive">
                         <table class="cart-table" dir="rtl">
-                            @foreach($Cproducts as $cproduct)
+
                             <thead>
                             <tr>
                                 <th>کالا</th>
@@ -21,10 +21,11 @@
                             </tr>
                             </thead>
                             <tbody>
-
+                            @foreach($Cproducts as $cproduct)
                             <tr>
                                 <td>
-                                    <a href="single-product.html"><img alt="" class="img-responsive" src="/storage/images/{{$cproduct->image}}"></a>
+                                    <a href="single-product.html">
+                                        <img alt="" class="img-responsive" src="/storage/images/{{$cproduct->image}}"></a>
                                 </td>
                                 <td>
                                     <h6><a href="single-product.html">{{$cproduct->name}}</a></h6>
@@ -40,7 +41,8 @@
                                     <div >{{$cproduct->discount}}</div>
                                 </td>
 
-                                <td><a class="delete" href="{{route('deletecart',$cproduct->product_id)}}"><i class="fa fa-trash-o" ></i></a></td>
+                                <td><a  href="{{route('deletecart',$cproduct->product_id)}}">
+                                        <i class="fa fa-trash-o" ></i></a></td>
                             </tr>
 
 
