@@ -56,7 +56,7 @@
 
                     <div class="col-sm-3">
                         <div class="video-gallery text-center">
-                            <a href="#">
+                            <a href="{{route ("film1")}}">
                                 <div class="iframe-img">
                                     <img src="/images/product-thumb-2.jpg" alt=""/>
                                 </div>

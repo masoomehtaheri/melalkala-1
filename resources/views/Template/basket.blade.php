@@ -41,7 +41,7 @@
                                     <div >{{$cproduct->discount}}</div>
                                 </td>
 
-                                <td><a  href="{{route('deletecart',$cproduct->product_id)}}">
+                                <td><a href="{{route('deletecart',$cproduct->product_id)}}">
                                         <i class="fa fa-trash-o" ></i></a></td>
                             </tr>
 

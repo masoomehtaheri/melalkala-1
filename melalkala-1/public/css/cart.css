@@ -1,0 +1,268 @@
+/*-------------------------------
+19. cart
+--------------------------------*/
+h4.cart-title {
+    border-bottom: 1px solid #d6d4d4;
+    color: #555454;
+    font-family: "irsans",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    overflow: hidden;
+    padding: 0 0 17px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+}
+table.cart-table {
+    margin:0 auto;
+    margin-bottom: 5%;
+
+}
+.cart-table thead {
+    background: #fff none repeat scroll 0 0;
+}
+#block-history thead {
+    background: #fff none repeat scroll 0 0;
+}
+.cart-table thead tr th {
+    border: 1px solid #e1e1e1;
+    border-collapse: collapse;
+    color: #000;
+    font-family: irsans;
+    font-size: 14px;
+    font-weight: bold;
+    height: 49px;
+    text-align: center;
+    vertical-align: middle;
+    background: #e1e1e1;
+}
+.cart-table tfoot tr td {
+    border: 1px solid #e1e1e1;
+    border-collapse: collapse;
+    color: #000;
+    font-family: irsans;
+    font-size: 14px;
+    font-weight: bold;
+    height: 49px;
+    text-align: center;
+    vertical-align: middle;
+    background: #e1e1e1;
+}
+.cart-table tbody tr td {
+    border: 1px solid #e1e1e1;
+    font-family: irsans;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 35px 35.7px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cart-table tbody tr td:last-child {
+    padding: 15px 20px;
+}
+body.cart .cart-table h6 {
+    font-size: 15px;
+    font-weight: bold;
+    width: 155px;
+}
+body.cart .cart-price,
+body.cart .cart-subtotal {
+    color: #fc5d5a;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+    padding: 0 15px;
+}
+.cart-subtotal {
+    color: #fc5d5a;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+    padding: 0 15px;
+}
+.cart-price{
+    color: #fc5d5a;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+    padding: 0 15px;
+}
+body.cart .carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+    display: block;
+    height: 127px;
+    max-width: 100%;
+}
+body.cart .cart-table input {
+    background: #f2f2f4 none repeat scroll 0 0;
+    border: medium none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+    width: 85px;
+}
+ .cart-table_input {
+    background: #f2f2f4 none repeat scroll 0 0;
+    border: medium none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+    width: 85px;
+}
+body.cart .cart-table tbody tr td.actions {
+    padding: 14px 0;
+}
+body.cart .cartPage-btn {
+}
+body.cart .cartPage-btn li {
+    display: inline-block;
+    margin-right: 9px;
+}
+.cbtn {
+    background: #282828 none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    font-family: "irsans",sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 204px;
+    transition: all 0.3s ease 0s;
+    margin: 0 auto;
+}
+.cbtn:hover {
+    background: #ED4F50;
+}
+/*-------------------------------
+19.1 cart discount code
+--------------------------------*/
+.cart-discount-code-area{
+    border: 1px solid #e1e1e1;
+    background: #fff;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    padding: 20px;
+}
+.cart-discount-code-area h2,
+.Stmate-shoping-and-cart h2{
+    border-bottom: 1px solid #d6d4d4;
+    color: #555454;
+    font-family: "irsans",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 12px;
+    padding: 0 0 15px;
+    text-transform: uppercase;
+}
+.cart-discount-code-area p,
+.Stmate-shoping-and-cart p{
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 13px;
+}
+.cart-discount-code-area input{
+    background: #fff;
+    border: 1px solid #d6d4d4;
+    height: 37px;
+    margin-top: 5px;
+    margin-bottom: 26px;
+    overflow: hidden;
+    padding: 0 10px;
+    width: 100%;
+}
+.cart-discount-code-area a{
+    background: #282828;
+    color: #fff;
+    display: block;
+    font-family: "irsans",sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+    width: 126px;
+}
+.cart-discount-code-area a:hover,
+body.cart .Stmate-shoping-and-cart form button:hover{
+    background: #f06262;
+}
+/*-------------------------------
+19.2 shooing and cart
+--------------------------------*/
+.Stmate-shoping-and-cart{
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    padding: 20px;
+}
+body.cart .shippingTitle p {
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+body.cart .selectParent > select {
+    -moz-appearance: none;
+    background: rgba(0, 0, 0, 0) url("../images/select.png") no-repeat scroll 99% 47% / 10px auto;
+    border: 1px solid #e1e1e1;
+    height: 34px;
+    margin-bottom: 26px;
+    outline: medium none;
+    padding: 0 5px;
+    width: 100%;
+}
+.ie9 .selectParent select{
+    padding: 0px!important;
+}
+body.cart .selectParent > select {
+    font-family: irsans;
+    font-size: 14px;
+    line-height: 34px;
+}
+body.cart input.coupon-input, .selectOption input {
+    border: 1px solid #e1e1e1;
+    display: block;
+    font-family: irsans;
+    font-size: 14px;
+    margin-bottom: 29px;
+    padding: 7px;
+    width: 100%;
+}
+body.cart .Stmate-shoping-and-cart form button {
+    background-color: #282828;
+    border: medium none;
+    color: #fff;
+    font-family: "irsans",sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: 38px;
+    line-height: 38px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 126px;
+    transition: all 0.3s ease 0s;
+}
