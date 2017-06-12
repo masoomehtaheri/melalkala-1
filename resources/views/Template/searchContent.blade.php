@@ -20,7 +20,7 @@
         <td>{{$Sproduct->price}}</td>
         <td>{{$Sproduct->discount}}</td>
         <td>{{$Sproduct->introdoction}}</td>
-        <td><a  class="btn btn-primary" href="{{route('admin.users.remove',$Sproduct->id)}}" >
+        <td><a  class="btn btn-primary"  href="{{route('single_products',$Sproduct->product_id)}}" >
           بیشتر  </a></td>
 
             @endforeach
