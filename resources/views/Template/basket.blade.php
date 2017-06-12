@@ -21,6 +21,8 @@
                             </thead>
                             <tbody>
                             <form><input type="hidden" value="{{ $totalpric=0}}">
+                                <input type="hidden" value="{{ $takhpric=0}}">
+
                             </form>
                             @foreach($Cproducts as $cproduct)
                                 <tr>
@@ -40,9 +42,11 @@
                                     </td>
                                     <td>
                                         <div>{{$cproduct->discount}}</div>
+                                        <form><input type="hidden" value="{{ $takhpric=$takhpric+ $cproduct->discount}}">
+                                        </form>
                                     </td>
                                     <td>
-                                        <div>{{$cproduct->discount}}</div>
+                                        <div>{{$cproduct->price-$cproduct->discount}}</div>
                                     </td>
 
                                     <td><a href="{{route('deletecart',$cproduct->product_id)}}">
@@ -51,18 +55,20 @@
                             @endforeach
                             <tfoot>
                             <tr>
-                                <td colspan="3">
-                                    <a href="#"></a>
+                                <td></td>
+                                <td >
+                                    <h6>مجموع</h6>
                                 </td>
                                 <td>
-                                    <h6><a href="#">مجموع</a></h6>
+                                    <h6>{{$totalpric}}</h6>
                                 </td>
 
 
                                 <td>
-                                    <span class="total-price">{{$totalpric}}</span>
+                                    <h6>{{ $takhpric}}</h6>
                                 </td>
 
+                                <td>{{$totalpric-$takhpric}}</td>
                                 <td></td>
                             </tr>
                             </tfoot>
