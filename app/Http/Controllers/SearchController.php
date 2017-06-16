@@ -10,7 +10,9 @@ class SearchController extends Controller
     public function search(Request $request)
     {
         $name= $request->input('name');
-        $SearchProducts=DB::table('products')->where('name','like',$name)->get();
+//        dd($name);
+        $SearchProducts=DB::table('products')->where('name','like','%'.$name.'%')->get();
+//        dd($SearchProducts);
         if ($SearchProducts !='null'){
             return view('pages.search',compact('SearchProducts'));
         }

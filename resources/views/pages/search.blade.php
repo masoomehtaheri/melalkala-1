@@ -6,6 +6,12 @@
     <script src="/js/logoslider.js" type="application/x-javascript"></script>
     <link rel="stylesheet" href="/css/search_table.css" type="text/css">
     <title>صفحه اصلی</title>
+    <style>
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
 @include('Template.header')

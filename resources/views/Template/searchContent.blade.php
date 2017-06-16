@@ -12,20 +12,21 @@
         <th>عملیات</th>
 
     </tr>
+    @foreach($SearchProducts as $Sproduct)
     <tr>
-        @foreach($SearchProducts as $Sproduct)
-        <td>{{$Sproduct->name}}</td>
+
+        <td><img src="/storage/images/{{$Sproduct -> image}}" alt="mm"></td>
         <td>{{$Sproduct->name}}</td>
         <td>{{$Sproduct->color}}</td>
         <td>{{$Sproduct->price}}</td>
         <td>{{$Sproduct->discount}}</td>
         <td>{{$Sproduct->introdoction}}</td>
-        <td><a  class="btn btn-primary" href="{{route('admin.users.remove',$Sproduct->id)}}" >
+        <td><a  class="btn btn-primary" href="#}}" >
           بیشتر  </a></td>
 
-            @endforeach
-    </tr>
 
+    </tr>
+    @endforeach
 </table>
     </div>
 </div>

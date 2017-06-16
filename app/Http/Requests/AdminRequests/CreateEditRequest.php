@@ -33,7 +33,6 @@ class CreateEditRequest extends FormRequest
             return [
                 'first_name'=>'required',
                 'last_name'=>'required',
-                'user_name'=>'required',
                 'email' => 'required|email|unique:users,email,'.$editUserId,
                 'password' => 'min:6|confirmed:password_confirmation',
                 'password_confirmation' => 'min:6',
@@ -48,7 +47,6 @@ class CreateEditRequest extends FormRequest
             return[
                 'first_name'=>'required',
                 'last_name'=>'required',
-                'user_name'=>'required',
                 'email' => 'required|email|unique:users',
                 'password' => 'required|min:6|confirmed:password_confirmation',
                 'password_confirmation' => 'required|min:6',

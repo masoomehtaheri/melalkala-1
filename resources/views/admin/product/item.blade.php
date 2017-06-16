@@ -9,11 +9,11 @@
     <th>{{$product -> discount}}</th>
     <th>{{$product -> color}}</th>
     <th>
-        <a href="{{route('admin.product.remove',$product->id)}}">
+        <a href="{{route('admin.product.remove',$product->product_id)}}">
             <span class="glyphicon glyphicon-remove"></span>
         </a>
 
-        <a href="{{route('admin.product.edit',$product->id)}}">
+        <a href="{{route('admin.product.edit',$product->product_id)}}">
             <span class="glyphicon glyphicon-edit"></span>
         </a>
     </th>

@@ -7,18 +7,26 @@
         <div class="container">
             <div class="header_top-sec">
                 <div class="user-info">
-                    <p>
-                        <a href="{{route('login')}}"><i class="fa fa-user"></i>حساب من</a>
-                        <a href="{{route('contact_us')}}"><i class="fa fa-phone"></i>تماس با ما</a>
-                        <a href="{{route('about_us')}}"><i class="fa fa-info"></i>درباره ما</a>
-                        <a href="{{route('wishlist')}}"><i class="fa fa-heart-o"></i>علاقه مندی</a>
+                    <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
+<p>
+    <a href="{{route('login')}}"><i class="fa fa-user"></i>حساب من</a>
+    <a href="{{route('contact_us')}}"><i class="fa fa-phone"></i>تماس با ما</a>
+    <a href="{{route('about_us')}}"><i class="fa fa-info"></i>درباره ما</a>
+    <a href="{{route('wishlist')}}"><i class="fa fa-heart-o"></i>علاقه مندی</a>
+@if(Auth::guest() <> true)
+    <a href="{{ url('/logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"><i class="fa fa-key"></i> خروج</a>
 
-                        {{--<a href="#"><i class="fa fa-key"></i> خروج</a>--}}
+@endif
 
                         @include('Template.notification')
 
                     </p>
+
                 </div>
+
                 <div class="top-call-to-acction">
                     <p>
                         <a href="#"> <i class="fa fa-phone"></i> پشتیبانی: 88437435</a>

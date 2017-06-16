@@ -73,7 +73,7 @@
         </select>
     </div>
     @if(isset($product))
-        <input type="hidden" name="pro_id" value="{{$product->id }}">
+        <input type="hidden" name="pro_id" value="{{$product->product_id }}">
         @endif
     <button type="submit" class="btn btn-default">ذخیره</button>
 </form>

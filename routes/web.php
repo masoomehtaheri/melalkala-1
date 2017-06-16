@@ -18,7 +18,6 @@ Route::group(['prefix'=>'/'],function (){
 
     Route::get('/zarin','UserController@zarin')->name('zarin');
     Route::get('/wishlist','UserController@wishlist')->name('wishlist');
-    Route::get('/404','UserController@show404')->name('show404');
 
     Route::get('/cart','CartController@cart')->name('cart');
 
@@ -26,8 +25,6 @@ Route::group(['prefix'=>'/'],function (){
     Route::get('/cart/addcart/{product_id}','CartController@addcart')->name('addcart');
     Route::get('/cart/deletecart/{product_id}','CartController@deletecart')->name('deletecart');
 
-    Route::get('/login','UserController@loginUser')->name('login');
-    Route::post('/login','UserController@create')->name('login');
 
     Route::get('/contact_us','UserController@contact_us')->name('contact_us');
     Route::post('/contact_us','MessageController@save')->name('contact_us.message');
@@ -79,4 +76,4 @@ Route::group(['prefix'=> '/admin','namespace'=>'Admin'],function (){
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'UserController@index');

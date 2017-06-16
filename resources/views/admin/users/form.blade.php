@@ -19,15 +19,7 @@
                 id="last_name"
                 value="{{old('last_name',isset($user)?$user->last_name:"") }}">
     </div>
-    <div class="form-group">
-        <label for="last_name">نام کاربری:</label>
-        <input
-                type="text"
-                name="user_name"
-                class="form-control"
-                id="user_name"
-                value="{{old('user_name',isset($user)?$user->user_name:"") }}">
-    </div>
+
     <div class="form-group">
         <label for="email">ایمیل:</label>
         <input

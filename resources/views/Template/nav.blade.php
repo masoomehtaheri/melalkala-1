@@ -6,6 +6,7 @@
                 <nav>
                     <ul>
                         <li><a class="home" href="{{route('index')}}">صفحه اصلی</a></li>
+                        <li><a href="{{route('products')}}"> محصولات</a></li>
                         <li><a href="{{route('zarin')}}">چینی زرین</a></li>
                         <li><a href="#">لوازم برقی خانگی</a>
                             <ul>

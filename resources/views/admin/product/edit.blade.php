@@ -5,5 +5,5 @@
 
 @section('content')
     @include('admin.product.errors')
-    @include('admin.product.form',[$pro_cat,$product])
+    @include('admin.product.form',[$pro_cat,$product,$colors, $file])
     @endsection

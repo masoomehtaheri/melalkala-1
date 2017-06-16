@@ -16,10 +16,25 @@
         <h2>حساب من</h2>
         <div class="login-form-grids">
             <h5>ورود به حساب کاربری</h5>
-            <form action="#" method="post" >
+            <form role="form" method="POST" action="{{ url('/login') }}" >
                 {{@csrf_field()}}
-                <input type="text" placeholder="نام کاربری"  name="user_name" >
-                <input type="password" placeholder="رمز ورود "  name="password" >
+                <input type="email" placeholder="ایمیل"  name="email" value="{{ old('email') }}" required autofocus >
+                @if ($errors->has('email'))
+                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                @endif
+
+                <input type="password" placeholder="رمز ورود " name="password" required >
+                @if ($errors->has('password'))
+                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                @endif
+
+                <a class="btn btn-link" href="{{ url('/password/reset') }}">
+                    رمز خود را فراموش کرده اید؟
+                </a>
                 <input type="submit" value="تایید">
             </form>
 
@@ -28,15 +43,13 @@
 
             <h6>ایجاد حساب کاربری</h6>
 
-            <form action="#" method="post" enctype="multipart/form-data">
+            <form role="form" method="POST" action="{{ url('/register') }}" enctype="multipart/form-data">
                 {{csrf_field()}}
                 <input type="text" placeholder="نام "  name="first_name" required value="{{old('first_name')}}" >
                 <input type="text" placeholder="نام خانوادگی "  name="last_name" required value="{{old('last_name')}}">
-                <input type="text" placeholder="نام کاربری"  name="user_name"  required value="{{old('user_name')}}">
                 <input type="email" placeholder=" ایمیل" name="email" required value="{{old('email')}}">
                 <input type="password" placeholder=" رمز"  name="password" required>
                 <input type="password" placeholder=" تایید رمز" name="password_confirmation" required >
-
                 <input type="text" placeholder=" آدرس " name="address"  required value="{{old('address')}}" >
                 <input type="text" placeholder=" تلفن " name="tel" required value="{{old('tel')}}">
                 <div class="register-check-box">
