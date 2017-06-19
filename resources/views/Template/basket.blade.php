@@ -8,7 +8,6 @@
                     <h4 class="cart-title">سبد خرید</h4>
                     <div class="table-responsive">
                         <table class="cart-table" dir="rtl">
-                            @foreach($Cproducts as $cproduct)
                             <thead>
                             <tr>
                                 <th>کالا</th>
@@ -21,67 +20,69 @@
                             </tr>
                             </thead>
                             <tbody>
+                            <form><input type="hidden" value="{{ $totalpric=0}}">
+                                <input type="hidden" value="{{ $takhpric=0}}">
 
-                            <tr>
-                                <td>
-                                    <a href="single-product.html"><img alt="" class="img-responsive" src="/storage/images/{{$cproduct->image}}"></a>
-                                </td>
-                                <td>
-                                    <h6><a href="single-product.html">{{$cproduct->name}}</a></h6>
-                                </td>
+                            </form>
+                            @foreach($Cproducts as $cproduct)
+                                <tr>
+                                    <td>
+                                        <a href="single-product.html"><img alt="" class="img-responsive"
+                                                                           src="/storage/images/{{$cproduct->image}}"></a>
+                                    </td>
+                                    <td>
+                                        <h6><a href="single-product.html">{{$cproduct->name}}</a></h6>
+                                    </td>
 
-                                <td>
-                                    <div class="cart-price">{{$cproduct->price}}</div>
-                                </td>
-                                <td>
-                                    <div >{{$cproduct->discount}}</div>
-                                </td>
-                                <td>
-                                    <div >{{$cproduct->discount}}</div>
-                                </td>
+                                    <td>
+                                        <div class="cart-price">{{$cproduct->price}}</div>
+                                        <form><input type="hidden" value="{{ $totalpric=$totalpric+ $cproduct->price}}">
+                                        </form>
 
-                                <td><a class="delete" href="{{route('deletecart',$cproduct->product_id)}}"><i class="fa fa-trash-o" ></i></a></td>
-                            </tr>
+                                    </td>
+                                    <td>
+                                        <div>{{$cproduct->discount}}</div>
+                                        <form><input type="hidden" value="{{ $takhpric=$takhpric+ $cproduct->discount}}">
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <div>{{$cproduct->price-$cproduct->discount}}</div>
+                                    </td>
 
-
-
-
-                            </tbody>
-
+                                    <td><a href="{{route('deletecart',$cproduct->product_id)}}">
+                                            <i class="fa fa-trash-o"></i></a></td>
+                                </tr>
+                            @endforeach
                             <tfoot>
                             <tr>
-                                <td colspan="3">
-                                    <a href="#"></a>
+                                <td></td>
+                                <td >
+                                    <h6>مجموع</h6>
                                 </td>
                                 <td>
-                                    <h6><a href="#">مجموع</a></h6>
+                                    <h6>{{$totalpric}}</h6>
                                 </td>
 
 
                                 <td>
-                                    <span class="total-price">3000</span>
+                                    <h6>{{ $takhpric}}</h6>
                                 </td>
 
+                                <td>{{$totalpric-$takhpric}}</td>
                                 <td></td>
                             </tr>
                             </tfoot>
-                            @endforeach
+                            </tbody>
+
                             <script src="/js/jquery.min.js"></script>
                             <script>
-                                $(document).ready(function(){
-                                    $('.delete').hover(function(){
+                                $(document).ready(function () {
+                                    $('.delete').hover(function () {
                                         $(this).parent().prev().fadeToggle();
                                     });
+                                });
 
-                                    var price = $('.cart-price');
-                                    var total = $('.total-price');
-                                    var gheimat = 0;
-
-                                    for(var i = 0 ; i < price.length ; i++) {
-                                        gheimat += parseInt($(price[i]).text());
-                                    }
-                                    $(total).text(gheimat);});
-                                    </script>
+                            </script>
                         </table>
 
                     </div>
