@@ -80,7 +80,6 @@
                                     for(var i = 0 ; i < price.length ; i++) {
                                         gheimat += parseInt($(price[i]).text());
                                     }
-
                                     $(total).text(gheimat);});
                                     </script>
                         </table>
