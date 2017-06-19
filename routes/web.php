@@ -73,7 +73,7 @@ Route::group(['prefix'=> '/admin','namespace'=>'Admin'],function (){
 
 });
 
-
+Route::get('/film', 'filmcontroller@index')->name('film1');
 Auth::routes();
 
 Route::get('/home', 'UserController@index');

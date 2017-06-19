@@ -224,7 +224,7 @@ body a{
 	transition: all 0.3s ease-in-out;
 }
 .top_right ul li a:hover,.top_left ul li a:hover{
-		text-decoration: none;
+	text-decoration: none;
 }
 .item_add:hover{
 }
@@ -1507,7 +1507,7 @@ ul#flexiselDemo1 p{
 	border-radius: 0;
 	margin-left: -2px;
 	margin-top: 0px;
-	padding: 10px 15px;
+	padding: 6px 15px;
 	display: inline-block;
 	position: absolute;
 }
@@ -1531,6 +1531,10 @@ ul#flexiselDemo1 p{
 #footer {
 	background:#eceaea;
 }
+.footer-top{
+	margin: 0 auto;
+}
+
 .footer-top .container {
 	border-bottom: 1px solid #E0E0DA;
 	padding-bottom: 20px;
