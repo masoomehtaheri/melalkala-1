@@ -69,7 +69,7 @@ class ProductController extends Controller
     }
 
 
-    public function edit($file,$pro_id)
+    public function edit($pro_id)
     {
         if (!ctype_digit($pro_id)){
 
@@ -77,24 +77,30 @@ class ProductController extends Controller
         $page_data=[
             "panel_title"=>"ویرایش محصولات"
         ];
-//        $file=$request->file('image');
-        dd($file);
         $pro_cat=Category::getcats();
         $colors=colors::getcolors();
-
         $product=products::find($pro_id);
-        return view('admin.product.edit',compact('product','pro_cat','page_data','colors','file'));
+//dd($product);
+//$img=$product->image;
+//dd($img);
+//if('storage'.'/images/'.){
+//
+//}
+        return view('admin.product.edit',compact('product','pro_cat','page_data','colors'));
 
     }
 
     public function update($pro_id,ProductRequest $productRequest)
     {
         $inputs=$productRequest->except('$pro_id');
-        $file=$productRequest->file('image');
-        $new_file_name=microtime(true).".".$file->getClientOriginalExtension();
-//        dd($new_file_name);
-        $productRequest->file('image')->storeAs('images',$new_file_name);
-        $product_data['image']=$new_file_name;
+
+//        $file=$productRequest->file('image');
+//        $new_file_name=microtime(true).".".$file->getClientOriginalExtension();
+//        $productRequest->file('image')->storeAs('images',$new_file_name);
+//        $product_data['image']=$new_file_name;
+//        $new=products::create($product_data);
+////
+//      products::find($pro_id)->create($product_data);
         products::find($pro_id)->update($inputs);
         return redirect()->route('admin.product.index')->with(['updateSuccess'=>true]);
     }

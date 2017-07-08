@@ -579,13 +579,13 @@ h2.title {
     direction: rtl;
 
 }
-.pagination-area {
+/*.pagination-area {
     margin-bottom:45px;
     margin-top:45px;
 
-}
+}*/
 
-.pagination-area
+/*.pagination-area
 .pagination li a {
     background:#F0F0E9;
     border: 0 none;
@@ -601,4 +601,4 @@ h2.title {
 .pagination li .active {
     background:#FE980F;
     color: #fff
-}
+}*/

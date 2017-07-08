@@ -12,26 +12,26 @@ table {	border-collapse: collapse; border-spacing: 0; }
 /****************************************************************************
 BASIC STYLES
 ****************************************************************************/
-body { background: #fff; color: #000;
+body { background: #fff; color: #7c7d80;
 	font: 13px 'irsans'!important;; }
-a { color: #000; text-decoration: none !important; }
+a { color: #7c7d80; text-decoration: none !important; }
 a:visited { /*color: #551a8b;*/ }
 a:hover { /*color: #06e;text-decoration: underline; */}
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
-h1, h2, h3, h4, h5, h6 { color: #000; }
-h1 { font:33px 'irsans'; font-weight: 400; }
-h1 a { color: #000; }
+h1, h2, h3, h4, h5, h6 { color: #616266;; }
+h1 { font:28px 'irsans'; font-weight: 400; }
+h1 a { color: #7c7d80; }
 h2 {  font:20px 'irsans'; }
-h2 a { color: #000; }
+h2 a { color: #7c7d80; }
 h3 { font:13px 'irsans';  font-weight: 400;}
-h3 a { color: #000; }
+h3 a { color: #7c7d80; }
 h4 {font:15px 'irsans';  }
-h4 a { color: #000; }
+h4 a { color: #7c7d80; }
 h5 { font:13px 'irsans'; }
-h5 a { color: #000; }
+h5 a { color: #7c7d80; }
 h6 { font:20px'irsans';  }
-h6 a { color: #000; }
+h6 a { color: #7c7d80; }
 ul {}
 ul li {}
 ul li a {}
@@ -40,7 +40,7 @@ ol li {}
 ol li a {}
 p strong { font-weight: bold; }
 p em { font-style: italic; }
-p {font:20px 'irsans';}
+p {font:15px 'irsans';}
 blockquote {}
 blockquote p {}
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
@@ -100,15 +100,15 @@ body a{
 }
 /*-- header_top --*/
 .top_bg{
-	background: #da2323;
+	background: #801416;
 	position: fixed;
 	width: 100%;
 	z-index: 99999;
 	font-family: 'irsans';
 	font-size: 13px;
-	box-shadow: 0 2px 3px #aaa;
-	border-bottom: 2px solid  #b50906;
-	color: #0e0e0e !important;
+	box-shadow: 0 2px 3px #7c7d80;
+	border-bottom: 2px solid #FF0000;
+	color: #7c7d80 !important;
 }
 .header_top-sec{
 	padding: 15px 0 8px;
@@ -138,16 +138,16 @@ body a{
 	padding: 0 10px 0 10px;
 	transition: all 0.3s ease 0s;
 	direction: rtl;
-	color: #393939 !important;
+	color: #FFFFFF !important;
 }
 .user-info p a:hover{
-	color: #fff05b;
+	color: #fff05b !important;
 }
 .user-info p {
 	color: #48441a !important;
 }
 .user-info p a i{
-	color: #fafffb !important;
+	color: #FF0000 !important;
 }
 .top-call-to-acction{
 	direction: rtl;
@@ -157,7 +157,7 @@ body a{
 	margin: 0;
 }
 .top-call-to-acction p a{
-	color: #393939 !important;
+	color: #FFFFFF !important;
 	display: block;
 	float: left;!important;
 	font-size: 16px;
@@ -167,7 +167,7 @@ body a{
 	padding-top: 10px;
 }
 .top-call-to-acction p a i{
-	color: #fafffb;
+	color: #FF0000;
 	display: block;
 	float: left;
 	font-size: 15px;
@@ -256,7 +256,7 @@ select.item_Size {
 /* header sale  basket*/
 .search-and-cart{}
 .search-categori{
-	box-shadow: 0 0 0 3px rgba(228, 228, 228, 1);
+	box-shadow: 0 0 0 3px rgba(124, 125, 128, 1);
 	display: block;
 	float: left;
 	height: 44px;
@@ -319,10 +319,10 @@ select.item_Size {
 	float: left;
 	width: 101px;
 	left: 0;
-	background: #f06262 none repeat scroll 0 0;
-	border-bottom: 2px solid #ca3030;
+	background: #7c7d80 none repeat scroll 0 0;
+	border-bottom: 2px solid #801416;
 	border-radius: 1px;
-	box-shadow: 0 0 0 3px rgba(228, 228, 228, 1);
+	box-shadow: 0 0 0 3px rgba(124, 125, 128, 1);
 	color: #fff;
 	font-family: "irsans",sans-serif;
 	font-size: 14px;
@@ -335,8 +335,8 @@ select.item_Size {
 	transition: all 300ms ease 0s;
 }
 .search-box button:hover{
-	background: #ffa200;
-	border-color: #e68700;
+	background: #FF0000;
+	border-color: #FF0000;
 }
 .shoping-cart{
 	float: right;
@@ -346,9 +346,9 @@ select.item_Size {
 	position: relative;
 }
 .shoping-cart a span{
-	background: #fe5b5a url("../images/cart.png") no-repeat scroll 10px 9px;
-	border-bottom: 2px solid #fe5b5a;
-	box-shadow: 0 0 0 3px rgba(228, 228, 228, 1);
+	background: #7c7d80 url("../images/cart.png") no-repeat scroll 10px 9px;
+	border-bottom: 2px solid #801416;
+	box-shadow: 0 0 0 3px rgba(124, 125, 128, 1);
 	color: #fff;
 	display: block;
 	font-family: "irsans",sans-serif;
@@ -405,7 +405,9 @@ select.item_Size {
 	float: left;
 	margin-right: 15px;
 }
-.cart-product-image a img{}
+.cart-product-image a img{
+	width: 100%;
+}
 .cart-product-info{
 	float: left;
 	margin-top: -2px;
@@ -548,7 +550,7 @@ select.item_Size {
 
 /*------------------menu----------------------*/
 .mainmenu-area{
-	background: #ededed;
+	background: #7c7d80;
 	margin: 0;
 	padding: 0;
 }
@@ -578,7 +580,7 @@ select.item_Size {
 	position: relative;
 }
 .mainmenu ul li a{
-	color: #505050;
+	color: #FFFFFF;
 	display: block;
 	font-family: 'irsans', sans-serif;
 	font-size: 13px;
@@ -590,11 +592,11 @@ select.item_Size {
 	box-sizing: border-box;
 }
 .mainmenu ul li:hover a{
-	background: #f06262 none repeat scroll 0 0;
+	background: #FF0000 none repeat scroll 0 0;
 	color: #fff;
 }
 .mainmenu ul li a.home{
-	background: #d62039 none repeat scroll 0 0;
+	background: #801416 none repeat scroll 0 0;
 	color: #fff;
 }
 .mainmenu ul li a:hover{}
@@ -703,7 +705,6 @@ select.item_Size {
 /*-- Brands  END--*/
 /*-------------------------------*/
 body.error .page-content{
-	background: url("../images/404196.jpg") center center;
 	background-size: cover;
 	position: relative;
 	width: 1920px;
@@ -1371,22 +1372,12 @@ ul#flexiselDemo1 p{
 	color: #ffc808;
 	margin-bottom: 10px;
 }
-.product-wid-price ins {
-	color: #5a88ca;
-	font-weight: 700;
-	margin-right: 10px;
-	text-decoration: none;
-}
-.single-wid-product h2 a {
-	color: #222;
-}
-.single-wid-product h2 a:hover, .single-product h2 a:hover {
-	color: #5a88ca;
-}
+
+
 .wid-view-more {
-	background: none repeat scroll 0 0 #d8241b;;
+	background: none repeat scroll 0 0 #801416;;
 	color: #fff;
-	padding: 3px 15px;
+	padding: 3px 12px;
 	position: absolute;
 	right: 240px;
 	top: 3px;
@@ -1401,13 +1392,13 @@ ul#flexiselDemo1 p{
 }
 .wid-view-more:hover {
 	background-color: #fff;
-	color: #b50906;
+	color: #FF0000;
 	text-decoration: none;
 	border: 2px solid  #b50906;
 
 }
 .wid-view-more::before{
-	border-color: #b50906;
+	border-color: #FF0000;
 	border-radius: 4px;
 }
 .wid-view-more::after{
@@ -1460,7 +1451,7 @@ ul#flexiselDemo1 p{
 	margin-bottom: 10px;
 }
 .product-wid-price ins {
-	color: #5a88ca;
+	color: #ff0000;
 	font-weight: 700;
 	margin-right: 10px;
 	text-decoration: none;
@@ -1552,7 +1543,7 @@ ul#flexiselDemo1 p{
 }
 
 .companyinfo h2  span{
-	color:#FE980F;
+	color:#801416;
 }
 
 .companyinfo p {
@@ -1693,9 +1684,9 @@ ul#flexiselDemo1 p{
 	color: #666663;
 	font-size: 14px;
 	font-weight: 300;
-	left: 25px;
+	left: 70px;
 	position: absolute;
-	top: 50px;
+	top: 115px;
 }
 .commnets
 .media-object {

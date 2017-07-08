@@ -18,12 +18,11 @@
             <div class="col-sm-12">
                 <div id="gmap" class="contact-map">
 
-                    <iframe width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                            src=""></iframe>
+                    <iframe  width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.5524641835427!2d51.255158210311656!3d35.56475352412744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f9206d7b99d3f85%3A0xadfc2de467a97405!2sNamaz+Square!5e0!3m2!1sen!2s!4v1498575603791"  ></iframe>
                     <br>
                     <small><a
-                                href="#"
-                                style="color:#888;text-align:left;font-size:0.85em">...نقشه بزرگتر</a></small>
+                                href="https://www.google.com/maps/place/Namaz+Square/@35.5647535,51.2551582,17z/data=!4m5!3m4!1s0x3f9206d7b99d3f85:0xadfc2de467a97405!8m2!3d35.5622847!4d51.2541002"
+                                style="color:#888;text-align:left;font-size:0.85em">View Larger Map</a></small>
 
                 </div>
             </div>

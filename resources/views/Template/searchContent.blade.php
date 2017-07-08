@@ -21,7 +21,7 @@
         <td>{{$Sproduct->price}}</td>
         <td>{{$Sproduct->discount}}</td>
         <td>{{$Sproduct->introdoction}}</td>
-        <td><a  class="btn btn-primary" href="#}}" >
+        <td><a  class="btn btn-primary" href="{{route('product.single',$Sproduct->product_id)}}" >
           بیشتر  </a></td>
 
 

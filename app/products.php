@@ -14,5 +14,10 @@ class products extends Model
 
     protected $primaryKey='product_id';
 
+    public function product_orders()
+    {
+        return $this->hasMany(Product_Order::class, 'product_id','product_id');
+    }
+
 
 }

@@ -25,53 +25,53 @@
                                                 <span class="new-box">
                                                     <span class="new-label">پیشنهاد ویژه</span>
                                                 </span>
-                                    <a class="fancybox" href="images/single-product/faded-short-sleeves-tshirt1.jpg" data-fancybox-group="gallery" title="">
-                                        <img src="images/single-product/faded-short-sleeves-tshirt1.jpg" alt="">
+                                    <a class="fancybox" href="/storage/images/{{$products -> image}}" data-fancybox-group="gallery" title="">
+                                        <img src="/storage/images/{{$products -> image}}" alt="">
                                         <span>تصویر بزرگتر<i class="fa fa-search-plus"></i></span>
                                     </a>
                                 </div>
-                                <div class="tab-pane" id="view2">
-                                                <span class="new-box">
-                                                    <span class="new-label">پیشنهاد ویژه</span>
-                                                </span>
-                                    <a class="fancybox" href="images/single-product/faded-short-sleeves-tshirt2.jpg" data-fancybox-group="gallery" title="">
-                                        <img src="images/single-product/faded-short-sleeves-tshirt2.jpg" alt="">
-                                        <span>تصویر بزرگتر<i class="fa fa-search-plus"></i></span>
-                                    </a>
-                                </div>
-                                <div class="tab-pane" id="view3">
-                                                <span class="new-box">
-                                                    <span class="new-label">پیشنهاد ویژه</span>
-                                                </span>
-                                    <a class="fancybox" href="images/single-product/faded-short-sleeves-tshirt3.jpg" data-fancybox-group="gallery" title="">
-                                        <img src="images/single-product/faded-short-sleeves-tshirt3.jpg" alt="">
-                                        <span>تصویر بزرگتر<i class="fa fa-search-plus"></i></span>
-                                    </a>
-                                </div>
-                                <div class="tab-pane" id="view4">
-                                                <span class="new-box">
-                                                    <span class="new-label">پیشنهاد ویژه</span>
-                                                </span>
-                                    <a class="fancybox" href="images/single-product/faded-short-sleeves-tshirt4.jpg" data-fancybox-group="gallery" title="">
-                                        <img src="images/single-product/faded-short-sleeves-tshirt4.jpg" alt=""><span>تصویر بزرگتر<i class="fa fa-search-plus"></i></span>
-                                    </a>
-                                </div>
-                                <div class="tab-pane" id="view5">
-                                                <span class="new-box">
-                                                    <span class="new-label">پیشنهاد ویژه</span>
-                                                </span>
-                                    <a class="fancybox" href="images/single-product/printed-chiffon-dress1.jpg" data-fancybox-group="gallery" title="">
-                                        <img src="images/single-product/printed-chiffon-dress11.jpg" alt=""><span>تصویر بزرگتر<i class="fa fa-search-plus"></i></span>
-                                    </a>
-                                </div>
+                                {{--<div class="tab-pane" id="view2">--}}
+                                                {{--<span class="new-box">--}}
+                                                    {{--<span class="new-label">پیشنهاد ویژه</span>--}}
+                                                {{--</span>--}}
+                                    {{--<a class="fancybox" href="/images/single-product/faded-short-sleeves-tshirt2.jpg" data-fancybox-group="gallery" title="">--}}
+                                        {{--<img src="/images/single-product/faded-short-sleeves-tshirt2.jpg" alt="">--}}
+                                        {{--<span>تصویر بزرگتر<i class="fa fa-search-plus"></i></span>--}}
+                                    {{--</a>--}}
+                                {{--</div>--}}
+                                {{--<div class="tab-pane" id="view3">--}}
+                                                {{--<span class="new-box">--}}
+                                                    {{--<span class="new-label">پیشنهاد ویژه</span>--}}
+                                                {{--</span>--}}
+                                    {{--<a class="fancybox" href="/images/single-product/faded-short-sleeves-tshirt3.jpg" data-fancybox-group="gallery" title="">--}}
+                                        {{--<img src="/images/single-product/faded-short-sleeves-tshirt3.jpg" alt="">--}}
+                                        {{--<span>تصویر بزرگتر<i class="fa fa-search-plus"></i></span>--}}
+                                    {{--</a>--}}
+                                {{--</div>--}}
+                                {{--<div class="tab-pane" id="view4">--}}
+                                                {{--<span class="new-box">--}}
+                                                    {{--<span class="new-label">پیشنهاد ویژه</span>--}}
+                                                {{--</span>--}}
+                                    {{--<a class="fancybox" href="/images/single-product/faded-short-sleeves-tshirt4.jpg" data-fancybox-group="gallery" title="">--}}
+                                        {{--<img src="/images/single-product/faded-short-sleeves-tshirt4.jpg" alt=""><span>تصویر بزرگتر<i class="fa fa-search-plus"></i></span>--}}
+                                    {{--</a>--}}
+                                {{--</div>--}}
+                                {{--<div class="tab-pane" id="view5">--}}
+                                                {{--<span class="new-box">--}}
+                                                    {{--<span class="new-label">پیشنهاد ویژه</span>--}}
+                                                {{--</span>--}}
+                                    {{--<a class="fancybox" href="/images/single-product/printed-chiffon-dress1.jpg" data-fancybox-group="gallery" title="">--}}
+                                        {{--<img src="/images/single-product/printed-chiffon-dress11.jpg" alt=""><span>تصویر بزرگتر<i class="fa fa-search-plus"></i></span>--}}
+                                    {{--</a>--}}
+                                {{--</div>--}}
                             </div>
-                            <div id="viewproduct" class="nav nav-tabs product-view" data-tabs="tabs">
-                                <div class="pro-view active"><a href="#view1" data-toggle="tab"><img src="images/single-product/faded-short-sleeves-tshirt1m.jpg" alt=""></a></div>
-                                <div class="pro-view"><a href="#view2" data-toggle="tab"><img src="images/single-product/faded-short-sleeves-tshirt2m.jpg" alt=""></a></div>
-                                <div class="pro-view"><a href="#view3" data-toggle="tab"><img src="images/single-product/faded-short-sleeves-tshirt3m.jpg" alt=""></a></div>
-                                <div class="pro-view"><a href="#view4" data-toggle="tab"><img src="images/single-product/faded-short-sleeves-tshirt4m.jpg" alt=""></a></div>
-                                <div class="pro-view"><a href="#view5" data-toggle="tab"><img src="images/single-product/printed-chiffon-dress.jpg" alt=""></a></div>
-                            </div>
+                            {{--<div id="viewproduct" class="nav nav-tabs product-view" data-tabs="tabs">--}}
+                                {{--<div class="pro-view active"><a href="#view1" data-toggle="tab"><img src="/images/single-product/faded-short-sleeves-tshirt1m.jpg" alt=""></a></div>--}}
+                                {{--<div class="pro-view"><a href="#view2" data-toggle="tab"><img src="/images/single-product/faded-short-sleeves-tshirt2m.jpg" alt=""></a></div>--}}
+                                {{--<div class="pro-view"><a href="#view3" data-toggle="tab"><img src="/images/single-product/faded-short-sleeves-tshirt3m.jpg" alt=""></a></div>--}}
+                                {{--<div class="pro-view"><a href="#view4" data-toggle="tab"><img src="/images/single-product/faded-short-sleeves-tshirt4m.jpg" alt=""></a></div>--}}
+                                {{--<div class="pro-view"><a href="#view5" data-toggle="tab"><img src="/images/single-product/printed-chiffon-dress.jpg" alt=""></a></div>--}}
+                            {{--</div>--}}
                         </div>
                     </div>
                 </div>
@@ -79,32 +79,21 @@
                 <!-- Start single product details -->
                 <div class="col-sm-7">
                     <div class="single-product-details">
-                        <h1>نام کالا</h1>
-                        <div class="sin-social">
-                            <p>
-                                <a class="btn btn-default twitter" href="#"><i class="fa fa-twitter"></i>Tweet</a>
-                                <a class="btn btn-default facebook" href="#"><i class="fa fa-facebook"></i>Share</a>
-                                <a class="btn btn-default google-plus" href="#"><i class="fa fa-google-plus"></i>Google+</a>
-                                <a class="btn btn-default pinterest" href="#"><i class="fa fa-pinterest"></i>Pinterest</a>
-                            </p>
-                        </div>
+                        <h1>{{$products->name}}</h1>
+
                         <p class="rating-and-review">
                             <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
                         </p>
-                        <h2><span>2.250.000 تومان</span></h2>
+                        <h2><span>{{number_format($products->price) }}تومان</span></h2>
 
                         <p class="sin-item"><span class="sin-item-btn">موجود در انبار</span></p>
 
 
-                        <p class="selector1">
-                            <label>انتخاب رنگ</label>
-                            <br>
-                            <a href="#" title="Orange" class="color orange"></a><a href="#" title="Blue" class="color blue"></a>
-                        </p>
+
                         <p class="buttons_bottom_block no-print" id="add_to_cart">
-                            <button class="exclusive" name="Submit" type="submit">
-                                <span>افزودن به سبد خرید</span>
-                            </button>
+                            <div class="exclusive">
+                               <a href="{{route('addcart',$products->product_id)}}"> <span>افزودن به سبد خرید</span></a>
+                            </div>
                         </p>
                         <p class="sin-adto-cart-bottom">
                             <a href="#">ارسال برای دوستان <i class="fa fa-envelope-o"></i></a>
@@ -134,24 +123,22 @@
                     <div class="col-xs-12 col-sm-9">
                         <div id="my-tab-content" class="tab-content">
                             <div class="tab-pane active" id="info1">
-                                <p class="tab-info-one">لورم ایپسوم متنی است که ساختگی برای طراحی و چاپ آن مورد است. صنعت چاپ زمانی لازم بود شرایطی شما باید فکر ثبت نام و طراحی، لازمه خروج می باشد. در ضمن قاعده همفکری ها جوابگوی سئوالات زیاد شاید باشد، آنچنان که لازم بود طراحی گرافیکی خوب بود. کتابهای زیادی شرایط سخت ، دشوار و کمی در سالهای دور لازم است.</p>
-                                <p class="tab-info-one">لورم ایپسوم متنی است که ساختگی برای طراحی و چاپ آن مورد است. صنعت چاپ زمانی لازم بود شرایطی شما باید فکر ثبت نام و طراحی، لازمه خروج می باشد. در ضمن قاعده همفکری ها جوابگوی سئوالات زیاد شاید باشد، آنچنان که لازم بود طراحی گرافیکی خوب بود. کتابهای زیادی شرایط سخت ، دشوار و کمی در سالهای دور لازم است.</p>
-                                <p class="tab-info-one">لورم ایپسوم متنی است که ساختگی برای طراحی و چاپ آن مورد است. صنعت چاپ زمانی لازم بود شرایطی شما باید فکر ثبت نام و طراحی، لازمه خروج می باشد. در ضمن قاعده همفکری ها جوابگوی سئوالات زیاد شاید باشد، آنچنان که لازم بود طراحی گرافیکی خوب بود. کتابهای زیادی شرایط سخت ، دشوار و کمی در سالهای دور لازم است.</p>
+                                <p class="tab-info-one">{{$products -> introdoction}}</p>
                             </div>
                             <div class="tab-pane" id="info2">
                                 <table class="table-data-sheet" dir="rtl">
                                     <tbody>
                                     <tr class="odd">
-                                        <td>تعداد سیم کارت</td>
-                                        <td>یک سیم کارته</td>
+                                        <td>قیمت</td>
+                                        <td>{{$products->price}}</td>
                                     </tr>
                                     <tr class="even">
-                                        <td>ابعاد</td>
-                                        <td>7.9 × 72.6 × 147 میلی‌متر</td>
+                                        <td>رنگ</td>
+                                        <td>{{$products->color}}</td>
                                     </tr>
                                     <tr class="odd">
-                                        <td>وزن</td>
-                                        <td>136 گرم</td>
+                                        <td>تخفیف</td>
+                                        <td>{{$products->discount}}</td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -162,7 +149,7 @@
                                     <div class="featured-inner">
                                         <div class="featured-image">
                                             <a href="single-product.html">
-                                                <img src="images/single-product/faded-short-sleeves-tshirt.jpg" alt="">
+                                                <img src="/images/single-product/faded-short-sleeves-tshirt.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="featured-info">
@@ -175,7 +162,7 @@
                                     <div class="featured-inner">
                                         <div class="featured-image">
                                             <a href="single-product.html">
-                                                <img src="images/single-product/blouse.jpg" alt="">
+                                                <img src="/images/single-product/blouse.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="featured-info">
@@ -188,7 +175,7 @@
                                     <div class="featured-inner">
                                         <div class="featured-image">
                                             <a href="single-product.html">
-                                                <img src="images/single-product/printed-dress1.jpg" alt="">
+                                                <img src="/images/single-product/printed-dress1.jpg" alt="">
                                             </a>
                                             <span class="price-percent-reduction">-20%</span>
                                         </div>
@@ -202,7 +189,7 @@
                                     <div class="featured-inner">
                                         <div class="featured-image">
                                             <a href="single-product.html">
-                                                <img src="images/single-product/printed-dress2.jpg" alt="">
+                                                <img src="/images/single-product/printed-dress2.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="featured-info">
@@ -215,7 +202,7 @@
                                     <div class="featured-inner">
                                         <div class="featured-image">
                                             <a href="single-product.html">
-                                                <img src="images/single-product/printed-summer-dress4.jpg" alt="">
+                                                <img src="/images/single-product/printed-summer-dress4.jpg" alt="">
                                             </a>
                                             <span class="price-percent-reduction">-20%</span>
                                         </div>
@@ -229,7 +216,7 @@
                                     <div class="featured-inner">
                                         <div class="featured-image">
                                             <a href="single-product.html">
-                                                <img src="images/single-product/printed-summer-dress.jpg" alt="">
+                                                <img src="/images/single-product/printed-summer-dress.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="featured-info">
@@ -278,7 +265,7 @@
                             <div class="featured-inner">
                                 <div class="featured-image">
                                     <a href="single-product.html">
-                                        <img src="images/single-product/faded-short-sleeves-tshirt.jpg" alt="">
+                                        <img src="/images/single-product/faded-short-sleeves-tshirt.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="featured-info">
@@ -307,7 +294,7 @@
                             <div class="featured-inner">
                                 <div class="featured-image">
                                     <a href="single-product.html">
-                                        <img src="images/single-product/blouse.jpg" alt="">
+                                        <img src="/images/single-product/blouse.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="featured-info">
@@ -336,7 +323,7 @@
                             <div class="featured-inner">
                                 <div class="featured-image">
                                     <a href="single-product.html">
-                                        <img src="images/single-product/printed-dress1.jpg" alt="">
+                                        <img src="/images/single-product/printed-dress1.jpg" alt="">
                                     </a>
                                     <span class="price-percent-reduction">-20%</span>
                                 </div>
@@ -366,7 +353,7 @@
                             <div class="featured-inner">
                                 <div class="featured-image">
                                     <a href="single-product.html">
-                                        <img src="images/single-product/printed-dress2.jpg" alt="">
+                                        <img src="/images/single-product/printed-dress2.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="featured-info">
@@ -425,7 +412,7 @@
                             <div class="featured-inner">
                                 <div class="featured-image">
                                     <a href="single-product.html">
-                                        <img src="images/single-product/printed-summer-dress.jpg" alt="">
+                                        <img src="/images/single-product/printed-summer-dress.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="featured-info">
@@ -454,7 +441,7 @@
                             <div class="featured-inner">
                                 <div class="featured-image">
                                     <a href="single-product.html">
-                                        <img src="images/single-product/printed-chiffon-dress1.jpg" alt="">
+                                        <img src="/images/single-product/printed-chiffon-dress1.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="featured-info">
@@ -483,7 +470,7 @@
                             <div class="featured-inner">
                                 <div class="featured-image">
                                     <a href="single-product.html">
-                                        <img src="images/single-product/printed-chiffon-dress4.jpg" alt="">
+                                        <img src="/images/single-product/printed-chiffon-dress4.jpg" alt="">
                                     </a>
                                     <span class="price-percent-reduction">-20%</span>
                                 </div>
@@ -513,7 +500,7 @@
                             <div class="featured-inner">
                                 <div class="featured-image">
                                     <a href="single-product.html">
-                                        <img src="images/single-product/printed-chiffon-dress8.jpg" alt="">
+                                        <img src="/images/single-product/printed-chiffon-dress8.jpg" alt="">
                                     </a>
                                     <span class="price-percent-reduction">-20%</span>
                                 </div>
@@ -543,7 +530,7 @@
                             <div class="featured-inner">
                                 <div class="featured-image">
                                     <a href="single-product.html">
-                                        <img src="images/single-product/printed-chiffon-dress5.jpg" alt="">
+                                        <img src="/images/single-product/printed-chiffon-dress5.jpg" alt="">
                                     </a>
                                     <span class="price-percent-reduction">-20%</span>
                                 </div>
@@ -573,7 +560,7 @@
                             <div class="featured-inner">
                                 <div class="featured-image">
                                     <a href="single-product.html">
-                                        <img src="images/single-product/printed-chiffon-dress3.jpg" alt="">
+                                        <img src="/images/single-product/printed-chiffon-dress3.jpg" alt="">
                                     </a>
                                     <span class="price-percent-reduction">-20%</span>
                                 </div>

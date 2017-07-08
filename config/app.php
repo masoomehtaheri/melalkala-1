@@ -178,6 +178,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+
+        Morilog\Jalali\JalaliServiceProvider::class,
+        Larabookir\Gateway\GatewayServiceProvider::class,
+
     ],
 
     /*
@@ -225,6 +229,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'jDate' =>Morilog\Jalali\Facades\jDate::class,
+        'Gateway' => Larabookir\Gateway\Gateway::class,
 
     ],
 

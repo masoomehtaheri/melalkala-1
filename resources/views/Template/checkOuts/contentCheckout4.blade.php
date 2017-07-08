@@ -35,30 +35,32 @@
                                 <table class="table">
                                     <thead>
                                     <tr>
-                                        <th>کل</th>
-                                        <th>تخفیف</th>
-                                        <th>فی</th>
-                                        <th>تعداد</th>
-                                        <th colspan="2">محصولات</th>
-
-
+                                        <th >تخفیف</th>
+                                        <th>قیمت</th>
+                                        <th >نام کالا</th>
+                                        <th  >محصولات</th>
                                     </tr>
                                     </thead>
                                     <tbody>
+                                    @foreach($cookie['id'] as $coo)
+                                        <form>
+                                            <input type="hidden" value="{{$kala=\App\products::find($coo)}}" >
+                                        </form>
                                     <tr>
-                                        <td>$246.00</td>
-                                        <td>$0.00</td>
-                                        <td>$123.00</td>
-                                        <td>2</td>
-                                        <td><a href="#">نام کالا</a>
+
+                                        <td >{{$kala->discount}}</td>
+                                        <td >{{$kala->price}}</td>
+
+                                        <td ><a href="#">{{$kala->name}}</a>
                                         </td>
                                         <td>
                                             <a href="#">
-                                                <img src="images/p1.jpg" alt="">
+                                                <img src="/storage/images/{{$kala->image}}" alt="">
                                             </a>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    @endforeach
+                                    {{--<tr>
                                         <td>$200.00</td>
                                         <td>$0.00</td>
                                         <td>$200.00</td>
@@ -71,11 +73,11 @@
                                             </a>
                                         </td>
 
-                                    </tr>
+                                    </tr>--}}
                                     </tbody>
                                     <tfoot>
                                     <tr>
-                                        <th>$446.00</th>
+                                        <th>{{$cookie['d'][0]}}</th>
                                         <th colspan="5">جمع کل</th>
 
                                     </tr>
@@ -93,13 +95,16 @@
                                             class="fa fa-chevron-right"></i></a>
                             </div>
                             <div class="pull-left">
-                                <button type="submit" class="btn btn-primary"><i
-                                            class="fa fa-chevron-left"></i>تکمیل
-                                </button>
+                                <a href="{{route('request')}}" class="btn btn-primary"> <i
+                                            class="fa fa-chevron-left"></i> تکمیل</a>
+
                             </div>
+
                         </div>
                     </form>
                 </div>
+
+
                 <!-- /.box -->
 
 
@@ -117,24 +122,10 @@
                     <div class="table-responsive">
                         <table class="table">
                             <tbody>
-                            <tr>
 
-                                <th>$446.00</th>
-                                <td> متن متن متن متن متن متن</td>
-                            </tr>
-                            <tr>
-
-                                <th>$10.00</th>
-                                <td>متن</td>
-                            </tr>
-                            <tr>
-
-                                <th>$0.00</th>
-                                <td>متن</td>
-                            </tr>
                             <tr class="total">
 
-                                <th>$456.00</th>
+                                <th>{{$cookie['d'][0]}}</th>
                                 <td>متن</td>
                             </tr>
                             </tbody>

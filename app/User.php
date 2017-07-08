@@ -17,9 +17,7 @@ class User extends Authenticatable
 //    protected $fillable = [
 //        'name', 'email', 'password',
 //    ];
-protected $guarded=[
-    'role'
-];
+protected $guarded=['name'];
 protected $primaryKey='user_id';
     /**
      * The attributes that should be hidden for arrays.
@@ -34,6 +32,11 @@ protected $primaryKey='user_id';
     {
         $this->attributes['password']=bcrypt($value);
 
+    }
+
+    public function orders()
+    {
+        return $this->hasMany(Order::class, 'user_id','user_id');
     }
 
 

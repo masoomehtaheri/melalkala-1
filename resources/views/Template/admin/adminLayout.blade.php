@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/css/bootstrap-rtl.min.css">
     <link href="/css/persianFont.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     <style>
         img{
             width: 100px;

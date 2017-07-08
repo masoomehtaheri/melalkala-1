@@ -153,15 +153,15 @@ a.close {
 }
 .about p {
     font-size: 1em;
-    color: #999;
+    color: #7c7d80;
     line-height: 2em;
-    text-align: right;
+    text-align: justify;
 }
 .about h4 {
     font-size: 2em;
     color: #1ABC9C;
     font-weight: 600;
-    letter-spacing: 2px;
+
     margin-bottom: 0.5em;
     text-align: center;
 }

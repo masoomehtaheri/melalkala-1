@@ -58,7 +58,7 @@
 }
 #content #checkout .nav {
     margin-bottom: 20px;
-    border-bottom: solid 1px #4fbfa8;
+    border-bottom: solid 1px #fe980f;
 }
 #content #checkout .nav li {
     height: 100%;
@@ -101,16 +101,21 @@
     width: 50px;
     text-align: right;
 }
+#content #checkout .table tbody tr td{
+   margin-right: 20px;
+}
 
 #content #checkout .table tbody tr td img,
 #content #basket .table tbody tr td img,
 #content #customer-order .table tbody tr td img {
-    width: 50px;
+    width: 60px;
+    margin-right: 10px;
+    margin-left: 50px;
 }
 #content #checkout .table tfoot,
 #content #basket .table tfoot,
 #content #customer-order .table tfoot {
-    font-size: 18px;
+    font-size: 20px;
 }
 #content #text-page h1,
 #content #text-page h2,
@@ -137,21 +142,21 @@
     background-color: #eeeeee;
 }
 .nav > li.disabled > a {
-    color: #999999;
+    color: #7c7d80;
 }
 .nav > li.disabled > a:hover,
 .nav > li.disabled > a:focus {
-    color: #999999;
+    color: #7c7d80;
 }
 
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
     background-color: #eeeeee;
-    border-color: #da2323;
+    border-color: #aa0005;
 }
 .nav-tabs {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .nav-tabs > li > a {
@@ -179,7 +184,7 @@
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
     color: #ffffff;
-    background-color: #da2323;
+    background-color: #801416;
 }
 
 .nav-tabs-justified > li > a {
@@ -207,7 +212,7 @@
 /* buttons  */
 .btn {
     font-weight: normal;
-    font-family: 'nazanin';
+    font-family: 'irsans';
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42857143;
@@ -216,9 +221,9 @@
 
 .btn-primary {
     color: #ffffff;
-    background-color: #da2323;
-    border-color: #da2323;
-    font-family: 'nazanin';
+    background-color: #801416;
+    border-color: #FF0000;
+    font-family: 'irsans';
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -226,8 +231,8 @@
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
     color: #ffffff;
-    background-color: #da2323;
-    border-color: #da2323;
+    background-color: #801416;
+    border-color: #FF0000;
 }
 
 .btn-primary:active,
@@ -256,7 +261,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-primary .badge {
-    color: #da2323;
+    color: #801416;
     background-color: #ffffff;
 }
 /* forms.less */

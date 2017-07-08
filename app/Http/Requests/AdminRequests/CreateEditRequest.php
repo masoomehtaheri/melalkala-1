@@ -36,10 +36,9 @@ class CreateEditRequest extends FormRequest
                 'email' => 'required|email|unique:users,email,'.$editUserId,
                 'password' => 'min:6|confirmed:password_confirmation',
                 'password_confirmation' => 'min:6',
-                'tel'=>'required|',
-                'address'=>'required',
                 'role' => 'required|numeric',
-
+                'tel'=>'required|',
+                'address'=>'required'
             ];
 
         }
@@ -50,10 +49,9 @@ class CreateEditRequest extends FormRequest
                 'email' => 'required|email|unique:users',
                 'password' => 'required|min:6|confirmed:password_confirmation',
                 'password_confirmation' => 'required|min:6',
-                'tel'=>'required|',
-                'address'=>'required',
                 'role'=>'required|numeric',
-
+                'tel'=>'required|',
+                'address'=>'required'
             ];
 
         }

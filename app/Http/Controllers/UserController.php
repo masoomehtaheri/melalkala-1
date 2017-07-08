@@ -2,19 +2,28 @@
 
 namespace App\Http\Controllers;
 use App\Http\Requests\AdminRequests\CreateEditRequest;
+use App\products;
 use App\User;
+use App\Utility\userUtility;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
     public function index()
     {
+
         return view('pages.index');
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function zarin()
     {
-        return view('pages.zarin');
+        /*$zarinProducts=DB::table('products')->where('cat','=',1)->get()->paginate(3);*/
+        $zarinProducts=products::where('cat','=',1)->paginate(3);
+        return view('pages.zarin',compact('zarinProducts'));
     }
     public function login()
     {

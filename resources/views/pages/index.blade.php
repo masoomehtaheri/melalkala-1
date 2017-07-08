@@ -7,7 +7,8 @@
     <title>صفحه اصلی</title>
 </head>
 <body>
-
+@section('content')
+    @endsection
 @include('Template.header')
 @include('Template.slider')
 @include('Template.brands')

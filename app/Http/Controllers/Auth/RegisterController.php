@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use App\Utility\userUtility;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -27,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -54,7 +55,22 @@ class RegisterController extends Controller
             'password' => 'required|min:6|confirmed',
             'tel' => 'required|max:255',
             'address' => 'required|max:255',
-        ]);
+        ],[
+                'first_name.required' => 'نام کاربری الزامی می باشد',
+                'first_name.max' => 'حداکثر تعداد 255',
+                'email.required' => 'ایمیل الزامی می باشد',
+                'email.email' => 'ایمیل باید به صورت صحیح وارد شود',
+                'email.unique' => 'ایمیل وارد شده قبلا استفاده شده است',
+                'password.required' => 'کلمه عبور الزامی می باشد',
+                'password.min' => 'حداقل تعداد کاراکتر برای کلمه عبور ۸6  می باشد',
+                'password.confirmed' => 'کلمه عبور وارد شده تطبیق ندارد',
+                'password_confirmation.required' => 'تکرار کلمه عبور الزامی می باشد',
+                'tel.required' => 'تلفن الزامی است',
+                'tel.max' => 'حداکثر تعداد 255',
+                'address.required' => 'آدرس الزامی است',
+                'address.max' => 'حداکثر تعداد 255',
+            ]
+        );
     }
 
     /**
@@ -67,11 +83,12 @@ class RegisterController extends Controller
     {
         return User::create([
             'first_name' => $data['first_name'],
-            'last_name' => $data['last_name'],
-            'email' => $data['email'],
-            'password' => $data['password'],
-            'tel' => $data['tel'],
-            'address' => $data['address']
+            'last_name'  => $data['last_name'],
+            'email'      => $data['email'],
+            'password'   => $data['password'],
+            'role'       =>userUtility::SUBSCRIBER,
+            'tel'        => $data['tel'],
+            'address'    => $data['address']
         ]);
     }
 }

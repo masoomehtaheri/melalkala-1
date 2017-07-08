@@ -35,7 +35,6 @@ class usercontroller extends Controller
     public function store(CreateEditRequest $createEditRequest)
     {
         $cratedUser=User::create($createEditRequest->except(['password_confirmation',]));
-
         if($cratedUser instanceof User){
 
             return redirect()->route('admin.users.index' )->with( ['insertSuccess'=>true]);

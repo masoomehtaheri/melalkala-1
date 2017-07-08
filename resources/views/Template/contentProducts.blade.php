@@ -29,20 +29,20 @@
                                     <a href="#"><img src="/storage/images/{{$product -> image}}" alt=""></a>
                                     <div class="overlay">
                                         <a href="/storage/images/{{$product -> image}}" class="zoom"></a>
-                                        <a href="{{route('single_products')}}" class="link"></a>
+                                        <a href="{{route('product.single',$product->product_id)}}" class="link" title="مشاهده جزییات کالا"></a>
                                     </div>
                                 </figure>
                                 <div class="detail">
-                                    <span>{{$product -> price}}</span>
-                                    <h4>{{$product -> name}}</h4>
 
+                                    <h4>{{$product -> name}}</h4>
+                                    <span>{{number_format($product -> price)}}</span>
                                     <div class="icon">
 
 
-                                        <a href="{{route('addcart',$product->product_id)}}" class="one tooltip" title="Add to cart"></a>
+                                        <a href="{{ route('addcart',$product->product_id) }}" class="one tooltip" title="افزودن به سبد خرید"></a>
 
-                                        <a href="#" class="two tooltip " title="Add to wish list"></a>
-                                        <a href="#" class="three tooltip" title="Add to compare"></a>
+                                        <a href="#" class="two tooltip " title="افزودن به علاقه مندیها"></a>
+                                        <a href="#" class="three tooltip" title="افزودن برای مقایسه"></a>
 
                                     </div>
                                 </div>
@@ -52,15 +52,18 @@
                         </div>
                     @endforeach
                 </div>
+                <div>{{$products->links()}}</div>
 
-                <div class="pagination-area">
-                    <ul class="pagination">
-                        <li><a href="" class="active">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
-                        <li><a href=""><i class="fa fa-angle-double-right"></i></a></li>
-                    </ul>
-                </div>
+                {{--<div class="pagination-area">--}}
+                    {{----}}
+                    {{--<ul class="pagination">--}}
+                        {{----}}
+                        {{--<li><a href="" class="active">1</a></li>--}}
+                        {{--<li><a href="">2</a></li>--}}
+                        {{--<li><a href="">3</a></li>--}}
+                        {{--<li><a href=""><i class="fa fa-angle-double-right"></i></a></li>--}}
+                    {{--</ul>--}}
+                {{--</div>--}}
             </div>
 
             <div class="span3">

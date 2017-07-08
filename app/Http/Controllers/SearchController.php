@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\products;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -20,5 +21,14 @@ class SearchController extends Controller
             return view('pages.index')->with( ['notexists'=>true]);
         }
 
+
+    }
+
+
+
+    public function show_single($pro_id)
+    {
+        $products=products::find($pro_id);
+        return view('pages.single_product',compact('products'));
     }
 }

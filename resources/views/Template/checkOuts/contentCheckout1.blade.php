@@ -1,3 +1,4 @@
+
 <div id="all">
 
     <div id="content">
@@ -35,13 +36,13 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="firstname">نام</label>
-                                        <input type="text" class="form-control" id="firstname">
+                                        <input type="text" class="form-control" id="firstname" value="{{$user->first_name}}">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="lastname">نام خانوادگی</label>
-                                        <input type="text" class="form-control" id="lastname">
+                                        <input type="text" class="form-control" id="lastname" value="{{$user->last_name}}">
                                     </div>
                                 </div>
                             </div>
@@ -51,7 +52,7 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="company">خیابان</label>
-                                        <input type="text" class="form-control" id="company">
+                                        <input type="text" class="form-control" id="company"value="{{$user->address}}">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -94,13 +95,13 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="phone">تلفن</label>
-                                        <input type="text" class="form-control" id="phone">
+                                        <input type="text" class="form-control" id="phone"value="{{$user->tel}}">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="email">ایمیل</label>
-                                        <input type="text" class="form-control" id="email">
+                                        <input type="text" class="form-control" id="email"value="{{$user->email}}">
                                     </div>
                                 </div>
 
@@ -133,17 +134,17 @@
                     <div class="box-header">
                         <h3>خلاصه سفارشات</h3>
                     </div>
-                    <p class="text-muted">توضیحات.</p>
+                    <p class="text-muted">توضیحات</p>
 
                     <div class="table-responsive">
                         <table class="table">
                             <tbody>
                             <tr>
-                                <th>$446.00</th>
-                                <td>متن متن متن متن متن متن</td>
+                                <th></th>
+                                <td></td>
 
                             </tr>
-                            <tr>
+                           {{-- <tr>
 
                                 <th>$10.00</th>
                                 <td>متن</td>
@@ -152,11 +153,11 @@
 
                                 <th>$0.00</th>
                                 <td>متن</td>
-                            </tr>
+                            </tr>--}}
                             <tr class="total">
 
-                                <th>$456.00</th>
-                                <td>متن</td>
+                                <th>{{$cookie['d'][0]}}</th>
+                                <td>مجموع پرداخت</td>
                             </tr>
                             </tbody>
                         </table>

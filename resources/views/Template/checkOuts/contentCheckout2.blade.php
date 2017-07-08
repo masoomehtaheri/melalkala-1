@@ -108,23 +108,14 @@
                             <tbody>
                             <tr>
 
-                                <th>$446.00</th>
-                                <td> متن متن متن متن متن متن</td>
+                                <th></th>
+                                <td></td>
                             </tr>
-                            <tr>
 
-                                <th>$10.00</th>
-                                <td>متن</td>
-                            </tr>
-                            <tr>
-
-                                <th>$0.00</th>
-                                <td>متن</td>
-                            </tr>
                             <tr class="total">
 
-                                <th>$456.00</th>
-                                <td>متن</td>
+                                <th>{{$cookie['d'][0]}}</th>
+                                <td>مجموع</td>
                             </tr>
                             </tbody>
                         </table>

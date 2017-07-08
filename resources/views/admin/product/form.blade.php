@@ -44,7 +44,7 @@
                 name="introdoction"
                 class="form-control"
                 id="introdoction"
-                >
+                value="{{old('introdoction',isset($product))?$product->introdoction:"" }}">
     </div>
 
     <div class="form-group">

@@ -17,10 +17,10 @@
                 <img data-u="image" src="/images/brand4.png"/>
             </div>
             <div>
-                <img data-u="image" src="/images/brand1.png"/>
+                <img data-u="image" src="/images/brand5.png"/>
             </div>
             <div>
-                <img data-u="image" src="/images/brand2.png"/>
+                <img data-u="image" src="/images/brand6.png"/>
             </div>
             <div>
                 <img data-u="image" src="/images/brand3.png"/>

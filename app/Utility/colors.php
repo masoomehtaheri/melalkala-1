@@ -17,7 +17,7 @@ class colors
     const SILVER=4;
     const GREEN=5;
     const BLUE=6;
-    const YELLOW=7;
+    const MAGENTA=7;
 
     public static function getcolors()
     {
@@ -28,6 +28,8 @@ class colors
             self::SILVER=>'نقره ای ',
             self::GREEN=>'سبز',
             self::BLUE=>'آبی',
+            self::MAGENTA=>'صورتی'
+
         ];
 
     }

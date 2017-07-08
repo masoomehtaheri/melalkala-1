@@ -9,13 +9,10 @@ class ProductController extends Controller
 {
     public function show()
     {
-        $products=products::all();
+        $products=products::paginate(9);
 //        dd($products);
         return view('pages.products',compact('products'));
     }
-    public function showinfo()
-    {
 
-        return view('pages.single_product');
-    }
+
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Utility\userUtility;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.products');
+        $cookie = userUtility::getcookie();
+        return view('pages.products',compact('cookie'));
     }
 }

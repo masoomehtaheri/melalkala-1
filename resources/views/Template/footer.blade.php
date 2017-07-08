@@ -13,7 +13,7 @@
                         <div class="video-gallery text-center">
                             <a href="{{route('film1')}}">
                                 <div class="iframe-img">
-                                    <img src="/images/product-thumb-1.jpg" alt=""/>
+                                    <img src="/images/iframe1.png" alt=""/>
                                 </div>
                                 <div class="overlay-icon">
                                     <i class="fa fa-play-circle-o"></i>
@@ -28,7 +28,7 @@
                         <div class="video-gallery text-center">
                             <a href="#">
                                 <div class="iframe-img">
-                                    <img src="/images/product-thumb-2.jpg" alt=""/>
+                                    <img src="/images/iframe2.png" alt=""/>
                                 </div>
                                 <div class="overlay-icon">
                                     <i class="fa fa-play-circle-o"></i>
@@ -43,7 +43,7 @@
                         <div class="video-gallery text-center">
                             <a href="#">
                                 <div class="iframe-img">
-                                    <img src="/images/product-thumb-1.jpg" alt=""/>
+                                    <img src="/images/iframe3.png" alt=""/>
                                 </div>
                                 <div class="overlay-icon">
                                     <i class="fa fa-play-circle-o"></i>
@@ -58,7 +58,7 @@
                         <div class="video-gallery text-center">
                             <a href="#">
                                 <div class="iframe-img">
-                                    <img src="/images/product-thumb-2.jpg" alt=""/>
+                                    <img src="/images/iframe4.png" alt=""/>
                                 </div>
                                 <div class="overlay-icon">
                                     <i class="fa fa-play-circle-o"></i>
@@ -71,8 +71,8 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="address">
-                        <img src="/images/images.jpg" alt=""/>
-                        <p>اسلامشهر-خیابان ...-کوچه</p>
+                        <img src="/images/map.png" alt=""/>
+                        <p>دفتر مرکزی - تهران</p>
                     </div>
                 </div>
             </div>

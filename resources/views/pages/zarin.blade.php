@@ -17,7 +17,7 @@
 @include('Template.header')
 
 <div class="clearfix"></div>
-@include('Template.content_zarin')
+@include('Template.content_zarin',$zarinProducts)
 @include('Template.footer')
 
 </body>

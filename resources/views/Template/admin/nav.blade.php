@@ -8,14 +8,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="/images/logo-m.png">ا</a>
+
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">  منو  <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">دسترسی</a></li>
+                <li class="active"><a href="#"> مدیریت محتوای ملل کالا  <span class="sr-only">(current)</span></a></li>
+                <li><a href="{{route('index')}}">صفحه اصلی</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">منوی باز شو<span class="caret"></span></a>
                     <ul class="dropdown-menu">
